@@ -15,12 +15,22 @@
 <br />
 
 <p>Hier soll die ViewBag stehen</p>
-<ul>
+
+
+<body>
+    <div>
+        @ViewBag.Message
+    </div>
+
+</body>
+
+
+@*<ul>
     @for (int i = 0; i < ViewBag.DieAnzahl; i++)
     {
         <li>@ViewBag.MeinText</li>
     }
-</ul>
+</ul>*@
 
 @*<ul>
     @foreach (var item in ViewBag.Liste)

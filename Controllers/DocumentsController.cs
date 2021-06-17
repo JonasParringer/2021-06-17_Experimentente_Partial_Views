@@ -11,12 +11,18 @@ namespace _2021_06_17_Experimentente_Partial_Views.Controllers
 {
     public class DocumentsController : Controller
     {
-        public IActionResult ViewBagBeispiel()
+        public ActionResult Index()
         {
-            ViewBag.MeinText = "Hello World";
-            ViewBag.DieAnzahl = 5;
+            ViewBag.Message = "Hello World";
             return View();
         }
+
+        //public IActionResult ViewBagBeispiel()
+        //{
+        //    ViewBag.MeinText = "Hello World";
+        //    ViewBag.DieAnzahl = 5;
+        //    return View();
+        //}
 
         //List<Document> documents = new List<Document>()
         //{
@@ -38,10 +44,10 @@ namespace _2021_06_17_Experimentente_Partial_Views.Controllers
         }
 
         // GET: Documents
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Document.ToListAsync());
-        }
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.Document.ToListAsync());
+        //}
 
         // GET: Documents/Details/5
         public async Task<IActionResult> Details(int? id)
