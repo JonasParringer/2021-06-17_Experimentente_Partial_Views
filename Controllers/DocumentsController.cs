@@ -13,7 +13,7 @@ namespace _2021_06_17_Experimentente_Partial_Views.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Hello World";
+            ViewBag.Message = "Display this shit immediately or go to hell and die mofo!!!";
             return View();
         }
 
