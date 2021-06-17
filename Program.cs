@@ -1,4 +1,5 @@
 using _2021_06_17_Experimentente_Partial_Views.Models;
+//using _2021_06_17_Experimentente_Partial_Views.Controllers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -24,10 +25,31 @@ namespace _2021_06_17_Experimentente_Partial_Views
                     webBuilder.UseStartup<Startup>();
                 });
 
-        Document document = new Document()
+        //Document document = new Document()
+        //{
+        //    ID = 42,
+        //    Name = "Sepp"
+        //};
+        
+        //Document document2 = new Document()
+        //{
+        //    ID = 43,
+        //    Name = "Josef"
+        //};
+
+
+        // Random random = new Random();
+
+        List<Document> documents = new List<Document>() 
         {
-            ID = 42,
-            Name = "Sepp"
+            new Document () {ID = 42, Name="Sepp"},
+            new Document () {ID = 43, Name="Franz"},
+
+
         };
+
+
+
+
     }
 }
