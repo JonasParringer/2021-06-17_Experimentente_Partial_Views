@@ -1,5 +1,8 @@
-﻿@{
+﻿@model IEnumerable<_2021_06_17_Experimentente_Partial_Views.Models.Document>
+
+@{
     ViewData["Title"] = "Home Page";
+
 }
 
 
@@ -19,22 +22,22 @@
 
 <body>
     <div>
-        @ViewBag.Message
+        <p>@ViewBag.Message</p>
     </div>
 
 </body>
 
 
 @*<ul>
-    @for (int i = 0; i < ViewBag.DieAnzahl; i++)
-    {
-        <li>@ViewBag.MeinText</li>
-    }
-</ul>*@
+        @for (int i = 0; i < ViewBag.DieAnzahl; i++)
+        {
+            <li>@ViewBag.MeinText</li>
+        }
+    </ul>*@
 
 @*<ul>
-    @foreach (var item in ViewBag.Liste)
-    {
-        <li>@ViewBag.</li>
-    }
-</ul>*@
+        @foreach (var item in ViewBag.Liste)
+        {
+            <li>@ViewBag.</li>
+        }
+    </ul>*@
