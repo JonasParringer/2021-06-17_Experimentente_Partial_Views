@@ -40,13 +40,13 @@ namespace _2021_06_17_Experimentente_Partial_Views
 
         // Random random = new Random();
 
-        List<Document> documents = new List<Document>() 
-        {
-            new Document () {ID = 42, Name="Sepp"},
-            new Document () {ID = 43, Name="Franz"},
+        //List<Document> documents = new List<Document>() 
+        //{
+        //    new Document () {ID = 42, Name="Sepp"},
+        //    new Document () {ID = 43, Name="Franz"},
 
 
-        };
+        //};
 
 
 
