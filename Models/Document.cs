@@ -15,5 +15,9 @@ namespace _2021_06_17_Experimentente_Partial_Views.Models
             id = this.ID;
             name = this.Name;
         }
+
+        public Document()
+        {
+        }
     }
 }
