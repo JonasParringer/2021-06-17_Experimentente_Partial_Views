@@ -2,7 +2,29 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+
+<br />
+<br />
+<br />
+
+<p>Hier soll die ViewBag stehen</p>
+<ul>
+    @for (int i = 0; i < ViewBag.DieAnzahl; i++)
+    {
+        <li>@ViewBag.MeinText</li>
+    }
+</ul>
+
+@*<ul>
+    @foreach (var item in ViewBag.Liste)
+    {
+        <li>@ViewBag.</li>
+    }
+</ul>*@

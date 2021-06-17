@@ -11,17 +11,24 @@ namespace _2021_06_17_Experimentente_Partial_Views.Controllers
 {
     public class DocumentsController : Controller
     {
-        List<Document> documents = new List<Document>()
+        public IActionResult ViewBagBeispiel()
         {
-            new Document () {ID = 42, Name="Sepp"},
-            new Document () {ID = 43, Name="Franz"},
-        };
-
-        public IActionResult UbergabeListe()
-        {
-            ViewBag.Liste = documents;
+            ViewBag.MeinText = "Hello World";
+            ViewBag.DieAnzahl = 5;
             return View();
         }
+
+        //List<Document> documents = new List<Document>()
+        //{
+        //    new Document () {ID = 42, Name="Sepp"},
+        //    new Document () {ID = 43, Name="Franz"},
+        //};
+
+        //public IActionResult UbergabeListe()
+        //{
+        //    ViewBag.Liste = documents;
+        //    return View();
+        //}
 
         private readonly Experimentente_Partial_ViewsContext _context;
 
